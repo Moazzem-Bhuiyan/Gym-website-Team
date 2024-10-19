@@ -1,63 +1,241 @@
-import React from 'react';
-
+import { Link, NavLink } from "react-router-dom";
+import { IoCartOutline } from "react-icons/io5";
+import { FaRegHeart, FaRegUserCircle, FaBars } from "react-icons/fa";
+import { useEffect, useState } from "react";
 const Navber = () => {
-    return (
-        <div>
-            <div className="navbar bg-white text-black ">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
-      </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
-    </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </details>
-      </li>
-      <li><a>Item 3</a></li>
-    </ul>
-  </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
-  </div>
-</div>
-            
+  const [isFixed, setIsFixed] = useState(false);
+  const page = (
+    <>
+      <NavLink to={"/about"}>About Us</NavLink>
+      <NavLink to={"/service"}>Our Service</NavLink>
+      <NavLink to={"/ourTeam"}>Our Team</NavLink>
+      <NavLink to={"/faq"}>Faq</NavLink>
+      <NavLink to={"/pricing"}>Pricing</NavLink>
+      <NavLink to={"/getQuta"}>Get Quta</NavLink>
+    </>
+  );
+
+  const shop = (
+    <>
+      <NavLink to={"/productList"}>Product List</NavLink>
+      <NavLink to={"/cart"}>Cart</NavLink>
+      <NavLink to={"/wishlist"}>Wishlist</NavLink>
+    </>
+  );
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight * 0.2) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div>
+      <div
+        className={`${
+          isFixed
+            ? "fixed top-0 left-0 w-full z-50 transition-all duration-300"
+            : ""
+        }`}
+      >
+        
+        <div
+          className={`py-[10px] pt-[20px] bg-white px-2 transition-all duration-300 ${
+            isFixed ? "shadow-xl" : "shadow-none"
+          } max-w-screen-2xl mx-auto`}
+        >
+          <div className="flex justify-between">
+            <div>
+              <div className="flex">
+                <div className="lg:hidden z-20">
+                  <div className="drawer z-20">
+                    <input
+                      id="my-drawer"
+                      type="checkbox"
+                      className="drawer-toggle"
+                    />
+                    <div className="drawer-content mt-2 mr-3 ml-2">
+                      <label
+                        htmlFor="my-drawer"
+                        className=" text-2xl drawer-button"
+                      >
+                        <FaBars />
+                      </label>
+                    </div>
+                    <div className="drawer-side ">
+                      <label
+                        htmlFor="my-drawer"
+                        aria-label="close sidebar"
+                        className="drawer-overlay"
+                      ></label>
+                      <ul className="menu bg-white text-black min-h-full w-80 p-4">
+                        <h1 className="bg-white md:px-5 py-6 shadow-sm">
+                          <div className="flex justify-center">
+                            <FaRegUserCircle className="rounded-full w-[100px] h-[100px] text-3xl text-black border-2" />
+                          </div>
+                          <h1 className="text-center text-xl mt-3">
+                            <Link to="/login">Login</Link>
+                          </h1>
+                        </h1>{" "}
+                        <hr />
+                        <div className="flex flex-col mt-4">
+                          <>
+                            <NavLink className={"p-2"} to={"/"}>
+                              Home
+                            </NavLink>
+
+                            <div className="dropdown dropdown-hover">
+                              <div
+                                tabIndex={0}
+                                role="button"
+                                className=" m-1"
+                              >
+                                <NavLink className={"p-2"} to={"/page"}>
+                                  Page
+                                </NavLink>
+                              </div>
+                              <ul
+                                tabIndex={0}
+                                className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+                              >
+                                <li>
+                                  <a>Item 1</a>
+                                </li>
+                                <li>
+                                  <a>Item 2</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <NavLink className={"p-2"} to={"/blog"}>
+                              Blog
+                            </NavLink>
+                            <NavLink className={"p-2"} to={"/shop"}>
+                              Shop
+                            </NavLink>
+                            <NavLink className={"p-2"} to={"/contact"}>
+                              Contact
+                            </NavLink>
+                          </>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <h1 className="font-bold text-3xl">laptop</h1>
+              </div>
+            </div>
+            <div className="mt-2">
+              <h1 className="hidden lg:block">
+                <>
+                  <NavLink className={"p-2"} to={"/"}>
+                    Home
+                  </NavLink>
+
+                  <div className="dropdown dropdown-hover">
+                    <div tabIndex={0} role="button" className=" m-1">
+                      <NavLink className={"p-2"} to={"/page"}>
+                        Page
+                      </NavLink>
+                    </div>
+                    <ul
+                      tabIndex={0}
+                      className="dropdown-content menu bg-[#363636] text-white z-[1] w-52 p-2 shadow"
+                    >
+                      <li>{page}</li>
+                    </ul>
+                  </div>
+
+
+
+                  <NavLink className={"p-2"} to={"/blog"}>
+                    Blog
+                  </NavLink>
+                  <div className="dropdown dropdown-hover">
+                    <div tabIndex={0} role="button" className=" m-1">
+                      <NavLink className={"p-2"} to={"/page"}>
+                        Shop
+                      </NavLink>
+                    </div>
+                    <ul
+                      tabIndex={0}
+                      className="dropdown-content menu bg-[#363636] rounded-none text-white z-[1] w-52 p-2 shadow"
+                    >
+                      <li>{shop}</li>
+                    </ul>
+                  </div>
+                  <NavLink className={"p-2"} to={"/contact"}>
+                    Contact
+                  </NavLink>
+                </>
+              </h1>
+            </div>
+            <div className="flex ">
+              <details className="dropdown">
+                <summary className="btn border-none rounded-full bg-white p-0 mr-3 hover:bg-white shadow-none">
+                  <div className="indicator">
+                    <FaRegUserCircle className="rounded-full w-[40px] h-[40px] text-3xl text-black border-2" />
+                  </div>
+                </summary>
+                <ul className="menu dropdown-content bg-white z-10 w-40 shadow ">
+                  <>
+                    <NavLink to="userhome">
+                      <li className="border-b border-gray-200">
+                        <a>My Profile</a>
+                      </li>
+                    </NavLink>
+                    <NavLink to="mycart">
+                      <li className="border-b border-gray-200">
+                        <a>My Cart</a>
+                      </li>
+                    </NavLink>
+                    <li>
+                      <button className="bg-green">Log out</button>
+                    </li>
+                  </>
+
+                  <NavLink to="/login">
+                    <li>Login</li>
+                  </NavLink>
+                </ul>
+              </details>
+
+              <span>
+                <Link to="/wishlist">
+                  <div className="indicator mt-1 mr-5">
+                    <span className="indicator-item badge bg-red-600 text-white border-none">
+                      +3
+                    </span>
+                    <button className="rounded-full w-[38px] h-[38px] border border-black bg-white text-2xl pl-[6px]">
+                      <FaRegHeart />
+                    </button>
+                  </div>
+                </Link>
+              </span>
+              <span>
+                <Link to="/mycart">
+                  <div className="indicator mt-1 mr-5">
+                    <span className="indicator-item badge bg-red-600 text-white border-none">
+                      +4
+                    </span>
+                    <button className="rounded-full w-[38px] h-[38px] border border-black bg-white text-2xl pl-[6px]">
+                      <IoCartOutline />
+                    </button>
+                  </div>
+                </Link>
+              </span>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Navber;
