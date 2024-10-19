@@ -101,7 +101,7 @@ const ServiceDetails = () => {
       </div>
 
       <div className="mb-4">
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
+        <label htmlFor="message" className="block text-sm font-medium text-gray-700">Messagee</label>
         <textarea
           id="message"
           {...register('message', { required: 'Message is required' })}
