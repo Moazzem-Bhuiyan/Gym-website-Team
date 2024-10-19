@@ -10,7 +10,7 @@ const queryClient = new QueryClient();
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <div className="max-w-7xl m-auto">
+      <div className="max-w-[1700px] m-auto">
         <RouterProvider router={router} />
       </div>
     </QueryClientProvider>
