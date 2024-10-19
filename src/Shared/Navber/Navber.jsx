@@ -1,7 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
-import { FaRegHeart, FaRegUserCircle, FaBars } from "react-icons/fa";
+import {   FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { FaUser } from "react-icons/fa";
+import { BsBag } from "react-icons/bs";
 const Navber = () => {
   const [isFixed, setIsFixed] = useState(false);
   const page = (
@@ -51,7 +53,7 @@ const Navber = () => {
             isFixed ? "shadow-xl" : "shadow-none"
           } max-w-screen-2xl mx-auto`}
         >
-          <div className="flex justify-between">
+          <div className="flex justify-between font-semibold">
             <div>
               <div className="flex">
                 <div className="lg:hidden z-20">
@@ -78,14 +80,14 @@ const Navber = () => {
                       <ul className="menu bg-white text-black min-h-full w-80 p-4">
                         <h1 className="bg-white md:px-5 py-6 shadow-sm">
                           <div className="flex justify-center">
-                            <FaRegUserCircle className="rounded-full w-[100px] h-[100px] text-3xl text-black border-2" />
+                            <FaUser className="  text-2xl text-black " />
                           </div>
                           <h1 className="text-center text-xl mt-3">
                             <Link to="/login">Login</Link>
                           </h1>
                         </h1>{" "}
                         <hr />
-                        <div className="flex flex-col mt-4">
+                        <div className="flex flex-col mt-4 ">
                           <>
                             <NavLink className={"p-2"} to={"/"}>
                               Home
@@ -97,9 +99,9 @@ const Navber = () => {
                                 role="button"
                                 className=" m-1"
                               >
-                                <NavLink className={"p-2"} to={"/page"}>
+                                <div className={"p-2"} >
                                   Page
-                                </NavLink>
+                                </div>
                               </div>
                               <ul
                                 tabIndex={0}
@@ -140,7 +142,7 @@ const Navber = () => {
 
                   <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className=" m-1">
-                      <NavLink className={"p-2"} to={"/page"}>
+                      <NavLink className={"p-2"}>
                         Page
                       </NavLink>
                     </div>
@@ -159,7 +161,7 @@ const Navber = () => {
                   </NavLink>
                   <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className=" m-1">
-                      <NavLink className={"p-2"} to={"/page"}>
+                      <NavLink className={"p-2"} >
                         Shop
                       </NavLink>
                     </div>
@@ -180,7 +182,8 @@ const Navber = () => {
               <details className="dropdown">
                 <summary className="btn border-none rounded-full bg-white p-0 mr-3 hover:bg-white shadow-none">
                   <div className="indicator">
-                    <FaRegUserCircle className="rounded-full w-[40px] h-[40px] text-3xl text-black border-2" />
+                  
+                    <FaUser className=" text-2xl text-black" />
                   </div>
                 </summary>
                 <ul className="menu dropdown-content bg-white z-10 w-40 shadow ">
@@ -190,7 +193,7 @@ const Navber = () => {
                         <a>My Profile</a>
                       </li>
                     </NavLink>
-                    <NavLink to="mycart">
+                    <NavLink to="cart">
                       <li className="border-b border-gray-200">
                         <a>My Cart</a>
                       </li>
@@ -206,26 +209,15 @@ const Navber = () => {
                 </ul>
               </details>
 
-              <span>
-                <Link to="/wishlist">
-                  <div className="indicator mt-1 mr-5">
-                    <span className="indicator-item badge bg-red-600 text-white border-none">
-                      +3
-                    </span>
-                    <button className="rounded-full w-[38px] h-[38px] border border-black bg-white text-2xl pl-[6px]">
-                      <FaRegHeart />
-                    </button>
-                  </div>
-                </Link>
-              </span>
+              
               <span>
                 <Link to="/mycart">
-                  <div className="indicator mt-1 mr-5">
-                    <span className="indicator-item badge bg-red-600 text-white border-none">
-                      +4
+                  <div className="indicator mt-3 mr-5">
+                    <span className="indicator-item badge bg-red-600 w-[10px] top-5 h-[18px] text-white border-none text-[12px]">
+                      4
                     </span>
-                    <button className="rounded-full w-[38px] h-[38px] border border-black bg-white text-2xl pl-[6px]">
-                      <IoCartOutline />
+                    <button className=" text-2xl pl-[6px]">
+                      <BsBag />
                     </button>
                   </div>
                 </Link>
