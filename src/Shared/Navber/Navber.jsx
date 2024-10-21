@@ -8,20 +8,20 @@ const Navber = () => {
   const [isFixed, setIsFixed] = useState(false);
   const page = (
     <>
-      <NavLink to={"/about"}>About Us</NavLink>
-      <NavLink to={"/service"}>Our Service</NavLink>
-      <NavLink to={"/ourTeam"}>Our Team</NavLink>
-      <NavLink to={"/faq"}>Faq</NavLink>
-      <NavLink to={"/pricing"}>Pricing</NavLink>
-      <NavLink to={"/getQuta"}>Get Quta</NavLink>
+      <NavLink to={"/about"}>ABOUT US</NavLink>
+      <NavLink to={"/service"}>OUR SERVICE</NavLink>
+      <NavLink to={"/ourTeam"}>OUR TEAM</NavLink>
+      <NavLink to={"/faq"}>FAQ</NavLink>
+      <NavLink to={"/pricing"}>PRICING</NavLink>
+      <NavLink to={"/getQuta"}>GET QUTA</NavLink>
     </>
   );
 
   const shop = (
     <>
-      <NavLink to={"/productList"}>Product List</NavLink>
-      <NavLink to={"/cart"}>Cart</NavLink>
-      <NavLink to={"/wishlist"}>Wishlist</NavLink>
+      <NavLink to={"/productList"}>PRODUCT LIST</NavLink>
+      <NavLink to={"/cart"}>CART</NavLink>
+      <NavLink to={"/wishlist"}>WISHLIST</NavLink>
     </>
   );
 
@@ -51,7 +51,7 @@ const Navber = () => {
         <div
           className={`py-[10px] pt-[20px] bg-white px-2 transition-all duration-300 ${
             isFixed ? "shadow-xl" : "shadow-none"
-          } max-w-screen-2xl mx-auto`}
+          } max-w-[1700px] mx-auto`}
         >
           <div className="flex justify-between font-semibold">
             <div>
@@ -83,14 +83,14 @@ const Navber = () => {
                             <FaUser className="  text-2xl text-black " />
                           </div>
                           <h1 className="text-center text-xl mt-3">
-                            <Link to="/login">Login</Link>
+                            <Link to="/login">LOGIN</Link>
                           </h1>
                         </h1>{" "}
                         <hr />
                         <div className="flex flex-col mt-4 ">
                           <>
                             <NavLink className={"p-2"} to={"/"}>
-                              Home
+                              HOME
                             </NavLink>
 
                             <div className="dropdown dropdown-hover">
@@ -100,7 +100,7 @@ const Navber = () => {
                                 className=" m-1"
                               >
                                 <div className={"p-2"} >
-                                  Page
+                                  PAGE
                                 </div>
                               </div>
                               <ul
@@ -116,13 +116,13 @@ const Navber = () => {
                               </ul>
                             </div>
                             <NavLink className={"p-2"} to={"/blog"}>
-                              Blog
+                              BLOG
                             </NavLink>
                             <NavLink className={"p-2"} to={"/shop"}>
-                              Shop
+                              SHOP
                             </NavLink>
                             <NavLink className={"p-2"} to={"/contact"}>
-                              Contact
+                              CONTACT
                             </NavLink>
                           </>
                         </div>
@@ -133,17 +133,17 @@ const Navber = () => {
                 <h1 className="font-bold text-3xl">laptop</h1>
               </div>
             </div>
-            <div className="mt-2">
+            <div className="mt-2 ">
               <h1 className="hidden lg:block">
                 <>
-                  <NavLink className={"p-2"} to={"/"}>
-                    Home
+                  <NavLink className={"p-2 "} to={"/"}>
+                    HOME
                   </NavLink>
 
                   <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className=" m-1">
-                      <NavLink className={"p-2"}>
-                        Page
+                      <NavLink className={"p-2 px-5"}>
+                        PAGE
                       </NavLink>
                     </div>
                     <ul
@@ -156,13 +156,13 @@ const Navber = () => {
 
 
 
-                  <NavLink className={"p-2"} to={"/blog"}>
-                    Blog
+                  <NavLink className={"p-2 px-5"} to={"/blog"}>
+                    BLOG
                   </NavLink>
                   <div className="dropdown dropdown-hover">
                     <div tabIndex={0} role="button" className=" m-1">
                       <NavLink className={"p-2"} >
-                        Shop
+                        SHOP
                       </NavLink>
                     </div>
                     <ul
@@ -172,8 +172,8 @@ const Navber = () => {
                       <li>{shop}</li>
                     </ul>
                   </div>
-                  <NavLink className={"p-2"} to={"/contact"}>
-                    Contact
+                  <NavLink className={"p-2 px-5"} to={"/contact"}>
+                    CONTACT
                   </NavLink>
                 </>
               </h1>
@@ -186,26 +186,24 @@ const Navber = () => {
                     <FaUser className=" text-2xl text-black" />
                   </div>
                 </summary>
-                <ul className="menu dropdown-content bg-white z-10 w-40 shadow ">
+                <ul className="menu dropdown-content bg-[#363636] z-10 w-40 shadow text-white">
                   <>
                     <NavLink to="userhome">
                       <li className="border-b border-gray-200">
-                        <a>My Profile</a>
+                        <a>MY PROFILE</a>
                       </li>
                     </NavLink>
                     <NavLink to="cart">
                       <li className="border-b border-gray-200">
-                        <a>My Cart</a>
+                        <a>MY CART</a>
                       </li>
                     </NavLink>
                     <li>
-                      <button className="bg-green">Log out</button>
+                      <button className="bg-green">LOG IN</button>
                     </li>
                   </>
 
-                  <NavLink to="/login">
-                    <li>Login</li>
-                  </NavLink>
+                  
                 </ul>
               </details>
 
