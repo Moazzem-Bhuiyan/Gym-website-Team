@@ -7,6 +7,7 @@
   color: black
 }
 
+<<<<<<< HEAD
 .about-container {
   color: #fff;
   background-color: #111;
@@ -91,4 +92,13 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+=======
+.fixedd {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  width: 300px; /* আপনার প্রয়োজন অনুযায়ী width ঠিক করুন */
+  transition: all 0.3s ease;
+>>>>>>> a81ad594d4efc71b5ad7bc732f95f4403fc99432
 }

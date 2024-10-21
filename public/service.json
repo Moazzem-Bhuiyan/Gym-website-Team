@@ -1,0 +1,116 @@
+[
+    {
+      "id": 1,
+      "title": "CrossFit",
+      "img": "https://i.ibb.co.com/1TM0L1h/s1.jpg",
+      "description": "This comprehensive service is designed to enhance both strength and functional fitness, making it perfect for individuals looking to improve overall body conditioning. Our expert trainers will guide you through a range of full-body exercises that target multiple muscle groups simultaneously. Utilizing free weights, kettlebells, and bodyweight movements, you'll experience an intense and varied workout. Whether your goal is muscle building, fat loss, or improving daily movement, this program is tailored to help you achieve your fitness objectives in a dynamic, fun, and challenging environment. You'll also benefit from the improved flexibility, balance, and endurance that functional training offers.",
+      "imageGallery": [
+        {
+          "url": "https://i.ibb.co.com/9p1qkqY/img-008-copyright-1536x1142.jpg",
+          "caption": "High-intensity strength workout with free weights"
+        },
+        {
+          "url": "https://i.ibb.co.com/GMHfVyw/img-018-copyright-1536x1179.jpg",
+          "caption": "Group functional training with kettlebells and equipment"
+        }
+      ],
+      "video": {
+        "title": "CrossFit Training Session",
+        "url": "https://www.youtube.com/embed/HnoPHqrdXQ8?si=XCB3vtT9sxPUV2xK",
+        "description": "Watch this short video to get an idea of our intense CrossFit training session, where we focus on a mixture of bodyweight exercises, cardio, and strength-building routines. Get ready to sweat!"
+      },
+      "highlights": [
+        "High-intensity full-body workout",
+        "Focus on functional fitness and mobility",
+        "Experienced trainers for personalized guidance",
+        "Includes use of dumbbells, kettlebells, and other gym equipment",
+        "Available in both group and individual sessions"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Fitness",
+      "img": "https://i.ibb.co.com/PxFgBHF/img-012-copyright.jpg",
+      "description": "Our group fitness and cardio sessions provide an exciting, motivating environment for individuals looking to improve cardiovascular health and endurance. These classes are led by certified fitness instructors who ensure that each participant is working at their optimum level. From high-energy aerobics to dynamic cardio workouts, our group sessions are designed to burn calories efficiently and improve overall stamina. The social aspect of group workouts adds an extra layer of motivation, as you push each other to reach new levels of fitness. Whether you're looking to lose weight, increase your energy, or simply enjoy a fun, community-based workout, our group fitness classes are an excellent option.",
+      "imageGallery": [
+        {
+          "url": "https://i.ibb.co.com/9p1qkqY/img-008-copyright-1536x1142.jpg",
+          "caption": "High-energy cardio sessions in a group"
+        },
+        {
+          "url": "https://i.ibb.co.com/GMHfVyw/img-018-copyright-1536x1179.jpg",
+          "caption": "Top-of-the-line cardio equipment"
+        }
+      ],
+      "video": {
+        "title": "Group Cardio Fitness Highlights",
+        "url": "https://www.youtube.com/embed/0UscoQcmBRI?si=zpApPkhKRZvoUxZR",
+        "description": "Watch how our group fitness sessions can help you burn calories, stay energized, and improve your cardiovascular health with the support of a fun and engaging community."
+      },
+      "highlights": [
+        "Fun, motivating group atmosphere",
+        "Led by certified fitness instructors",
+        "Great for cardiovascular health and endurance",
+        "Burns calories quickly and efficiently",
+        "Suitable for all fitness levels and goals"
+      ]
+    },
+  
+    {
+      "id": 3,
+      "title": "WorkOut",
+      "img": "https://i.ibb.co.com/6s5V3gM/img-011-copyright.jpg",
+      "description": "Our weightlifting and strength conditioning program is ideal for anyone serious about building muscle mass, increasing strength, and improving overall physical performance. This service caters to both beginners and advanced athletes, with personalized training plans that focus on lifting techniques, progressive overload, and form correction. You'll have access to a wide range of equipment, including barbells, dumbbells, squat racks, and resistance machines. Our trainers will help you develop proper lifting techniques to prevent injury and maximize your results. This program not only improves physical strength but also boosts mental resilience and confidence as you reach new milestones in your fitness journey.",
+      "imageGallery": [
+        {
+          "url": "https://i.ibb.co.com/9p1qkqY/img-008-copyright-1536x1142.jpg",
+          "caption": "Barbell training for strength building"
+        },
+        {
+          "url": "https://i.ibb.co.com/GMHfVyw/img-018-copyright-1536x1179.jpg",
+          "caption": "Modern gym equipment available for weightlifting"
+        }
+      ],
+      "video": {
+        "title": "Strength Conditioning in Action",
+        "url": "  https://www.youtube.com/embed/0Wq-jijD2s8?si=O9G_bTe8P-Sj1rrt",
+        "description": "Watch a weightlifting session in action to see how proper form, discipline, and consistency can help you improve muscle mass, endurance, and physical strength. Perfect for all fitness levels!"
+      },
+      "highlights": [
+        "Focus on muscle mass, endurance, and strength",
+        "Barbells, dumbbells, and machines available",
+        "Personalized training plans tailored to goals",
+        "Experienced trainers guide proper form and technique",
+        "Open to all fitness levels, from beginner to advanced"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "BodyBuilding",
+      "img": "https://i.ibb.co.com/WFRMHyw/bwdiio.jpg",
+      "description": "Our CrossFit and High-Intensity Interval Training (HIIT) sessions are designed to push your physical limits and rapidly improve fitness in a short amount of time. These workouts involve a variety of exercises, from bodyweight movements to weightlifting, combined with intense cardio to create a well-rounded and challenging fitness experience. Each session is unique, helping to prevent workout boredom and promote ongoing progress. CrossFit is ideal for improving strength, speed, endurance, and flexibility, while HIIT burns fat efficiently and boosts metabolism. These sessions are perfect for individuals who want fast results, enjoy high-energy environments, and love pushing themselves to new levels.",
+      "imageGallery": [
+        {
+          "url": "https://i.ibb.co.com/9p1qkqY/img-008-copyright-1536x1142.jpg",
+          "caption": "High-intensity CrossFit training"
+        },
+        {
+          "url": "https://i.ibb.co.com/GMHfVyw/img-018-copyright-1536x1179.jpg",
+          "caption": "Group HIIT classes for quick, effective results"
+        }
+      ],
+      "video": {
+        "title": "CrossFit and HIIT Workouts",
+        "url": "https://www.youtube.com/embed/HnoPHqrdXQ8?si=XCB3vtT9sxPUV2xK",
+        "description": "Watch our CrossFit and HIIT sessions to get a taste of these intense workouts, designed to challenge your body and mind, push your limits, and help you achieve faster fitness results."
+      },
+      "highlights": [
+        "High-intensity interval training for quick results",
+        "Combines cardio, strength, and bodyweight exercises",
+        "Efficient workouts designed for all fitness levels",
+        "Perfect for improving endurance and burning fat",
+        "Group or individual sessions available"
+      ]
+    }
+  ]
+  

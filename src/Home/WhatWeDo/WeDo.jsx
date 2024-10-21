@@ -3,7 +3,7 @@ import React from 'react';
 const WeDo = () => {
 
     return (
-        <div className='w-[60%] m-auto my-10 space-y-5'>
+        <div className='w-[60%] m-auto my-20 space-y-8 '>
 
             <h1 className=' uppercase font-semibold text-center'>What we do</h1>
 
