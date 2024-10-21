@@ -12,7 +12,7 @@ const ServiceHome = () => {
 
   return (
     <div className="my-20">
-      <div className="grid grid-cols-4 gap-10 p-10">
+      <div className="grid grid-cols-4 gap-10 p-10 w-[80%] m-auto">
         {service.map((item) => (
          <Link to = {`/servicedetails/${item.id}`}>
          
